@@ -1,0 +1,32 @@
+[
+  {
+    "channel": "Upwork Proposal",
+    "subject": null,
+    "body": "Hi [Client Name],\n\nI saw your post looking for help with [Specific Task from Job Post]. I can certainly handle this, but I'd like to propose a more permanent solution instead of just billing you hourly.\n\nManual data entry is slow, prone to errors, and a recurring cost. My agency specializes in automating these exact kinds of tasks, especially for desktop software like [Software Name] that doesn't have an API.\n\nWe build a secure AI agent that works just like a person—using the mouse and keyboard to enter or extract data—but it runs 24/7 with 100% accuracy. You pay a one-time setup fee, and the task is handled forever. This is often cheaper than hiring a freelancer for a few months.\n\nWould you be open to a 15-minute call to discuss automating this process instead of outsourcing it? We could build a solution that eliminates this manual work for good.\n\nBest,\n[Your Name]",
+    "notes": "This template shifts the client's mindset from 'hiring a person' to 'implementing a system.' It acknowledges their immediate need but presents a higher-value, long-term solution that ultimately saves them more money and hassle."
+  },
+  {
+    "channel": "Cold Email",
+    "subject": "That manual work in [Software Name]?",
+    "body": "Hi [First Name],\n\nI'm reaching out because I see many [Industry] businesses still rely on legacy software like [Software Name]. My guess is your team spends a lot of time manually transferring data in or out of it.\n\nWe build 'digital workers' that take over these repetitive tasks. Our AI agents operate your desktop software's interface—clicking, typing, and copying—just like a person, but they work around the clock without making mistakes.\n\nImagine your team could stop doing [Specific Task, e.g., 'end-of-day reporting' or 'new client onboarding'] and focus on more valuable work. We can fully automate that process in about a week.\n\nAre you open to a brief call next week to see how we could free up your team from the clicks and keystrokes?\n\nBest regards,\n[Your Name]\n[Your Company]",
+    "notes": "The subject line is specific and intriguing. The body leads with a common industry pain point, explains the solution in simple terms ('digital workers'), and ties it to a clear business benefit (freeing up the team)."
+  },
+  {
+    "channel": "LinkedIn Message",
+    "subject": null,
+    "body": "Hi [First Name], I saw you're the [Job Title] at [Company Name].\n\nI imagine managing the data workflow for systems like [Software Name] can be a major time-sink for your team. All that manual copying and pasting is a recipe for errors and burnout.\n\nMy company solves this by building AI agents that automate interaction with legacy desktop software. It's like having a digital team member who handles the repetitive data entry 24/7, freeing up your staff for work that requires their expertise.\n\nWould you be interested in seeing a 2-minute video showing how we automate these kinds of tasks?\n\nThanks,\n[Your Name]",
+    "notes": "This message is tailored to the likely responsibilities of an Office Manager or IT Director. The call to action is very low-friction ('watch a 2-minute video'), making it an easy 'yes' for a busy professional."
+  },
+  {
+    "channel": "Forum Post",
+    "subject": null,
+    "body": "Hi [Username],\n\nI read your comment about the nightmare of [Specific Pain Point from their post] in [Software Name]. I've heard that from so many people in the [Industry] space—it's a huge operational bottleneck.\n\nWhile there isn't a public API to fix it, there is a way to automate it. My company actually builds software bots that control the mouse and keyboard to perform these tasks automatically. The bot can log in, run the reports, and export the data on a schedule, with zero manual effort.\n\nNot trying to sell here, just wanted to let you know a solution exists. If you're curious to see how it works, feel free to DM me. Happy to share some info.\n\nCheers!",
+    "notes": "This template is designed to be helpful, not spammy. It validates the user's frustration, provides a solution concept directly related to their problem, and uses a soft call-to-action (DM me) that respects forum culture."
+  },
+  {
+    "channel": "Follow-up Email",
+    "subject": "Re: That manual work in [Software Name]?",
+    "body": "Hi [First Name],\n\nJust wanted to quickly follow up on my email from last week. The manual data entry for [Software Name] is a problem we solve for many companies like yours.\n\nWe recently helped a [Similar Industry] client save 15+ hours per week by automating their invoicing process. They now have a 'digital worker' handling it all, error-free.\n\nIs automating repetitive tasks on your radar at the moment? No worries if the timing isn't right.\n\nBest,\n[Your Name]\n[Your Company]",
+    "notes": "This follow-up is short, polite, and adds new value with a mini-case study or social proof ('We recently helped...'). The call to action is a simple, low-pressure question that makes it easy for them to reply."
+  }
+]

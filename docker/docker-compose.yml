@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # Main application server
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.app
+    ports:
+      - "3000:3000"
+    env_file:
+      - ../.env
+    volumes:
+      - ../tasks:/app/tasks
+      - ../results:/app/results
+      - ../outreach:/app/outreach
+    restart: unless-stopped
+    networks:
+      - legacy-net
+
+  # Computer Use sandbox (for GUI automation)
+  sandbox:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "5901:5901"  # VNC
+      - "6080:6080"  # noVNC web
+    environment:
+      - DISPLAY=:1
+    restart: unless-stopped
+    networks:
+      - legacy-net
+    # Security: limit resources
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+networks:
+  legacy-net:
+    driver: bridge

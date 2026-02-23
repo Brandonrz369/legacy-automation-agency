@@ -1,0 +1,70 @@
+Here is the requested information for your market research, formatted as JSON.
+
+**Market Context:**
+
+1.  **Typical Hourly Rate:** Businesses typically pay **$15-25/hr** for manual data entry, with an average loaded cost (including overhead) closer to $25-35/hr.
+2.  **Estimated Monthly Volume:** A single full-time data entry role can process between **10,000 and 30,000 records** per month, depending on the complexity of each entry. This represents a 160-hour/month workload.
+3.  **Potential Monthly Revenue Per Client:** Your target SaaS or service fee of **$500 - $1,500 per month** per client is a highly attractive alternative to a full-time or even part-time hire.
+4.  **The ROI Pitch:** "A full-time data entry clerk costs over $3,200/month (160 hrs x $20/hr) plus overhead. Our automation solution performs the same work 24/7 with higher accuracy for a flat fee of $750/month. You save over 75% on direct costs, eliminate human error, and free up your team for higher-value tasks."
+
+[
+  {
+    "platform": "Upwork.com",
+    "search_query": "\"manual data entry\" \"desktop application\"",
+    "expected_results": "Finds job posts from businesses that explicitly mention their software is a non-web, installed application, which is a strong signal for a lack of API and automation potential.",
+    "monthly_value_per_client": 750,
+    "roi_pitch": "Replace a $3,200/month manual data entry role with a $750/month automated solution. Our software works 24/7 with 99.9% accuracy, saving you over $2,450 every month."
+  },
+  {
+    "platform": "Upwork.com",
+    "search_query": "\"data entry\" \"QuickBooks Desktop\"",
+    "expected_results": "Targets SMBs in accounting, wholesale, or manufacturing using the non-cloud version of QuickBooks. These clients often need to sync orders from e-commerce platforms or CRMs.",
+    "monthly_value_per_client": 600,
+    "roi_pitch": "Replace a $3,200/month manual data entry role with a $600/month automated solution. Our software works 24/7 with 99.9% accuracy, saving you over $2,600 every month."
+  },
+  {
+    "platform": "Upwork.com",
+    "search_query": "\"copy paste\" \"proprietary software\"",
+    "expected_results": "Catches non-technical clients describing their manual process literally. 'Proprietary software' is a keyword for custom-built systems that are perfect targets for automation.",
+    "monthly_value_per_client": 900,
+    "roi_pitch": "Replace a $3,200/month manual data entry role with a $900/month automated solution. Our software works 24/7 with 99.9% accuracy, saving you over $2,300 every month."
+  },
+  {
+    "platform": "Upwork.com",
+    "search_query": "\"order entry\" \"in-house system\"",
+    "expected_results": "Focuses on e-commerce, manufacturing, or distribution companies that have a custom-built order management or ERP system.",
+    "monthly_value_per_client": 850,
+    "roi_pitch": "Replace a $3,200/month manual data entry role with a $850/month automated solution. Our software works 24/7 with 99.9% accuracy, saving you over $2,350 every month."
+  },
+  {
+    "platform": "Upwork.com",
+    "search_query": "\"data migration\" \"no API\"",
+    "expected_results": "Finds businesses that are acutely aware of their technical limitations. They need to move data but have no modern way to do it, making them prime candidates for an automation pitch.",
+    "monthly_value_per_client": 1200,
+    "roi_pitch": "Replace a $3,200/month manual data entry role with a $1,200/month automated solution. Our software works 24/7 with 99.9% accuracy, saving you over $2,000 every month."
+  },
+  {
+    "platform": "Indeed.com",
+    "search_query": "title:(\"Data Entry Clerk\" OR \"Data Entry Specialist\") \"Sage 50\"",
+    "expected_results": "Identifies companies hiring full-time staff specifically to work with older, desktop-based accounting software like Sage 50 (or Sage 100, 300).",
+    "monthly_value_per_client": 750,
+    "roi_pitch": "Replace a $3,200/month manual data entry role with a $750/month automated solution. Our software works 24/7 with 99.9% accuracy, saving you over $2,450 every month."
+  },
+  {
+    "platform": "Indeed.com",
+    "search_query": "\"Accounts Payable\" \"manual invoice processing\"",
+    "expected_results": "Targets finance and accounting departments that are still manually keying in invoice data from PDFs or paper into their accounting system.",
+    "monthly_value_per_client": 950,
+    "roi_pitch": "Replace a $3,200/month manual data entry role with a $950/month automated solution. Our software works 24/7 with 99.9% accuracy, saving you over $2,250 every month."
+  },
+  {
+    "platform": "Indeed.com",
+    "search_query": "\"Order Processor\" \"AS/400\"",
+    "expected_results": "A highly specific query for established, larger companies in logistics, finance, or manufacturing that still rely on IBM AS/400 mainframe or midrange systems.",
+    "monthly_value_per_client": 1500,
+    "roi_pitch": "Replace a $3,200/month manual data entry role with a $1,500/month automated solution. Our software works 24/7 with 99.9% accuracy, saving you over $1,700 every month."
+  },
+  {
+    "platform": "Indeed.com",
+    "search_query": "\"Data Entry\" \"Microsoft Access Database\"",
+    "expected_results": "Finds

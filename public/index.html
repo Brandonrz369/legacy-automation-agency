@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy Automation Agency — AI-Powered GUI Automation</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #10b981;
+      --bg: #0f172a;
+      --bg-card: #1e293b;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); }
+    .logo span { color: var(--accent); }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 0.9rem;
+    }
+    nav a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 14px 36px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover { background: var(--primary-dark); }
+    .cta-secondary {
+      background: transparent;
+      border: 1px solid var(--border);
+      margin-left: 16px;
+    }
+    .cta-secondary:hover { background: var(--bg-card); }
+
+    /* Problem */
+    .problem {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .problem h2 { font-size: 2rem; margin-bottom: 16px; }
+    .problem p { color: var(--text-muted); max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+
+    /* How It Works */
+    .how-it-works {
+      padding: 60px 0;
+    }
+    .how-it-works h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+    .step {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .step-number {
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    .step h3 { margin-bottom: 8px; }
+    .step p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Pricing */
+    .pricing {
+      padding: 60px 0;
+    }
+    .pricing h2 { font-size: 2rem; text-align: center; margin-bottom: 48px; }
+    .price-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .price-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px;
+    }
+    .price-card.featured {
+      border-color: var(--primary);
+      box-shadow: 0 0 24px rgba(37, 99, 235, 0.15);
+    }
+    .price-card h3 { font-size: 1.25rem; margin-bottom: 8px; }
+    .price { font-size: 2.5rem; font-weight: 800; margin: 16px 0; }
+    .price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
+    .price-card ul {
+      list-style: none;
+      margin: 24px 0;
+    }
+    .price-card li {
+      padding: 8px 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .price-card li::before {
+      content: "\2713  ";
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Intake Form */
+    .intake {
+      padding: 60px 0;
+    }
+    .intake h2 { font-size: 2rem; text-align: center; margin-bottom: 16px; }
+    .intake > p { color: var(--text-muted); text-align: center; margin-bottom: 36px; }
+    .form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 10px 14px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .submit-btn:hover { opacity: 0.9; }
+    #form-status {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    /* Dashboard */
+    .dashboard {
+      padding: 60px 0;
+    }
+    .dashboard h2 { font-size: 2rem; text-align: center; margin-bottom: 36px; }
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      max-width: 800px;
+      margin: 0 auto 36px;
+    }
+    .status-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .status-box .value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .status-box .label {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      .cta-secondary { margin-left: 0; margin-top: 12px; display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Legacy<span>Auto</span></div>
+      <nav>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#get-started">Get Started</a>
+        <a href="#dashboard">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Your Legacy Software, Automated</h1>
+      <p>We automate data entry and extraction for desktop software that has no API.
+         Our AI agents operate the mouse and keyboard — like a human, but 24/7, zero errors.</p>
+      <a href="#get-started" class="cta-btn">Get a Free Assessment</a>
+      <a href="#how-it-works" class="cta-btn cta-secondary">See How It Works</a>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="container">
+      <h2>The Problem</h2>
+      <p>Your business runs on desktop software from the 2000s. It works fine — but there's no API,
+         no export button, no integration options. So you pay someone $15-25/hour to manually type data
+         into it, copy-paste between screens, and click through 40 dialog boxes per invoice.
+         Every. Single. Day.</p>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Send Us Your Data</h3>
+          <p>Email PDFs, CSVs, or spreadsheets. Or just describe what needs to go where.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>AI Parses & Plans</h3>
+          <p>Our AI reads your documents, extracts the data, and maps it to your software's fields.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Robot Does the Clicking</h3>
+          <p>An AI agent opens your software, navigates the menus, and enters data — using the mouse and keyboard like a human would.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Verified & Delivered</h3>
+          <p>Every entry is screenshot-verified. You get a confirmation report with before/after proof.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2>Pricing</h2>
+      <div class="price-cards">
+        <div class="price-card">
+          <h3>Setup</h3>
+          <div class="price">$2,500 <span>one-time</span></div>
+          <ul>
+            <li>Map your legacy software UI</li>
+            <li>Configure AI navigation paths</li>
+            <li>Test with your real data</li>
+            <li>Train the AI on your workflow</li>
+            <li>Includes first 100 entries free</li>
+          </ul>
+          <a href="#get-started" class="cta-btn" style="display:block;text-align:center;">Get Started</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Monthly Retainer</h3>
+          <div class="price">$750 <span>/month</span></div>
+          <ul>
+            <li>Up to 1,000 entries/month</li>
+            <li>24/7 automated processing</li>
+            <li>Screenshot verification reports</li>
+            <li>Priority support</li>
+            <li>Monthly optimization reviews</li>
+          </ul>
+          <a href="#get-started" class="cta-btn" style="display:block;text-align:center;">Start Free Trial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intake" id="get-started">
+    <div class="container">
+      <h2>Get Your Free Assessment</h2>
+      <p>Tell us about your legacy software and we'll assess if we can automate it.</p>
+      <div class="form-card">
+        <form id="intake-form">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" required placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required placeholder="john@company.com">
+          </div>
+          <div class="form-group">
+            <label>Company</label>
+            <input type="text" name="company" placeholder="Acme Corp">
+          </div>
+          <div class="form-group">
+            <label>Legacy Software Name</label>
+            <input type="text" name="software" required placeholder="e.g., QuickBooks Desktop, Sage 50, Dentrix...">
+          </div>
+          <div class="form-group">
+            <label>What needs to be automated?</label>
+            <select name="task_type">
+              <option value="data-entry">Data Entry (into the software)</option>
+              <option value="data-extraction">Data Extraction (out of the software)</option>
+              <option value="both">Both</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Describe your current process</label>
+            <textarea name="description" required placeholder="e.g., We receive 50 invoices per day as PDFs. Currently, a team member manually types each one into our ERP system. It takes about 3 hours/day..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Approximate volume per month</label>
+            <input type="text" name="volume" placeholder="e.g., 500 invoices, 200 patient records">
+          </div>
+          <button type="submit" class="submit-btn">Submit Assessment Request</button>
+          <div id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard" id="dashboard">
+    <div class="container">
+      <h2>System Status</h2>
+      <div class="status-grid">
+        <div class="status-box">
+          <div class="value" id="stat-status">--</div>
+          <div class="label">System Status</div>
+        </div>
+        <div class="status-box">
+          <div class="value" id="stat-pending">--</div>
+          <div class="label">Tasks Pending</div>
+        </div>
+        <div class="status-box">
+          <div class="value" id="stat-completed">--</div>
+          <div class="label">Tasks Completed</div>
+        </div>
+        <div class="status-box">
+          <div class="value" id="stat-uptime">--</div>
+          <div class="label">Uptime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Legacy Automation Agency &copy; 2026 — Powered by AI Agent Pipeline</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dashboard status polling
+    async function updateDashboard() {
+      try {
+        const res = await fetch('/api/health');
+        const data = await res.json();
+        document.getElementById('stat-status').textContent = data.status;
+        document.getElementById('stat-pending').textContent = data.tasks_pending;
+        document.getElementById('stat-completed').textContent = data.tasks_completed;
+        document.getElementById('stat-uptime').textContent = Math.floor(data.uptime / 60) + 'm';
+      } catch {
+        document.getElementById('stat-status').textContent = 'offline';
+      }
+    }
+    updateDashboard();
+    setInterval(updateDashboard, 10000);
+
+    // Intake form submission
+    document.getElementById('intake-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const status = document.getElementById('form-status');
+      status.textContent = 'Submitting...';
+      status.style.color = '#94a3b8';
+
+      const form = new FormData(e.target);
+      const data = Object.fromEntries(form.entries());
+
+      try {
+        const res = await fetch('/api/tasks', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            description: `Assessment request from ${data.name} (${data.email}) at ${data.company}.\nSoftware: ${data.software}\nType: ${data.task_type}\nVolume: ${data.volume}\nProcess: ${data.description}`,
+            software_name: data.software,
+            task_type: 'setup'
+          })
+        });
+        const result = await res.json();
+        status.textContent = `Submitted! Task ID: ${result.task_id}. We'll be in touch within 24 hours.`;
+        status.style.color = '#10b981';
+        e.target.reset();
+      } catch (err) {
+        status.textContent = 'Error submitting. Please email us directly.';
+        status.style.color = '#ef4444';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+[
+  {
+    "legacySoftware": "Dentrix",
+    "industry": "Dental",
+    "task": "Entering new patient registration and medical history forms into patient charts.",
+    "prospectingLocation": "Dental practice management forums (DentalTown), LinkedIn groups for Office Managers, Upwork job posts for 'dental data entry'.",
+    "painPoint": "Front desk staff spend 15-20 minutes per new patient on manual entry, leading to longer wait times, data entry errors in insurance details, and taking staff away from patient-facing activities. Cost is ~$5-8 per patient in labor.",
+    "searchQuery": "Upwork/Indeed: \"Dentrix data entry\" OR \"dental patient registration\" OR \"dental front desk remote\""
+  },
+  {
+    "legacySoftware": "Eaglesoft",
+    "industry": "Dental",
+    "task": "Verifying patient insurance eligibility and benefits by logging into multiple different insurance carrier portals and inputting the data back into Eaglesoft.",
+    "prospectingLocation": "Job boards like Indeed, targeting roles like 'Dental Insurance Coordinator' or 'Dental Biller'.",
+    "painPoint": "This is a time-consuming, daily task that can take hours. Errors lead to rejected claims and delayed revenue. The cost is high staff time and significant cash flow delays.",
+    "searchQuery": "LinkedIn/Indeed: \"Eaglesoft insurance verification\" OR \"dental insurance coordinator\""
+  },
+  {
+    "legacySoftware": "Open Dental",
+    "industry": "Dental",
+    "task": "Migrating patient charts, treatment plans, and appointment history from a previous system (like Dentrix or Eaglesoft) during a practice acquisition.",
+    "prospectingLocation": "Dental practice broker websites, forums discussing practice transitions, targeted outreach to recently acquired dental offices.",
+    "painPoint": "Manual migration is extremely slow, prone to errors, and can cost tens of thousands of dollars in temporary staff or lost productivity. It delays the full integration of the new practice.",
+    "searchQuery": "Upwork: \"Open Dental data migration\" OR \"Dentrix to Open Dental\""
+  },
+  {
+    "legacySoftware": "QuickBooks Desktop",
+    "industry": "Accounting / Small Business",
+    "task": "Entering vendor invoices received as PDFs via email into QuickBooks Desktop to be paid.",
+    "prospectingLocation": "Upwork, Freelancer.com, LinkedIn job posts for 'Bookkeeper' or 'Accounts Payable Clerk'.",
+    "painPoint": "A bookkeeper can spend 10-20 hours a week on this task alone. It's repetitive, prone to typos (wrong amounts, due dates), and delays financial reporting. Cost is salary for a part-time or full-time clerk.",
+    "searchQuery": "Upwork/LinkedIn: \"QuickBooks Desktop data entry\" OR \"invoice processing\" OR \"accounts payable clerk\""
+  },
+  {
+    "legacySoftware": "Sage 50 (formerly Peachtree)",
+    "industry": "Accounting / Construction / Distribution",
+    "task": "Reconciling daily bank and credit card transactions by manually comparing statements to entries in Sage 50.",
+    "prospectingLocation": "LinkedIn groups for CPAs and bookkeepers, industry associations for construction or distribution companies, Indeed job posts.",
+    "painPoint": "Monthly reconciliation is a major time sink, often taking days. It delays month-end closing and can hide cash flow problems or fraudulent charges. The cost is high-value employee time spent on low-value tasks.",
+    "searchQuery": "Indeed/LinkedIn: \"Sage 50 bookkeeper\" OR \"bank reconciliation specialist\""
+  },
+  {
+    "legacySoftware": "Epic Hyperspace (Desktop Client)",
+    "industry": "Healthcare",
+    "task": "Transcribing patient data from scanned intake forms or faxes into the patient's electronic health record (EHR).",
+    "prospectingLocation": "Healthcare job boards (Health eCareers), LinkedIn searches for 'Medical Records Clerk' or 'HIM Specialist' at hospitals and large clinics.",
+    "painPoint": "High volume of paperwork creates a constant backlog. Errors in data entry can have serious clinical consequences. The cost includes salaries for a team of data entry clerks and the risk of medical errors.",
+    "searchQuery": "Indeed: \"Epic data entry\" OR \"medical records clerk\" OR \"HIM technician\""
+  },
+  {
+    "legacySoftware": "eClinicalWorks (Desktop Version)",
+    "industry": "Healthcare",
+    "task": "Entering discrete lab results received via PDF or fax into the structured data fields of the patient's chart.",
+    "prospectingLocation": "Forums for medical practice managers (e.g., MGMA), job postings for 'Medical Assistant' or 'Clinical Data Entry'.",
+    "painPoint": "Delays in entering lab results mean physicians don't have timely information for patient care. Manual entry is slow and risks transcription errors (e.g., wrong values, units), impacting clinical decisions.",
+    "searchQuery": "LinkedIn/Indeed: \"eClinicalWorks data entry\" OR \"lab result entry\""
+  },
+  {
+    "legacySoftware": "Allscripts (Desktop EMR)",
+    "industry": "Healthcare",
+    "task": "Charge entry: Inputting billing codes (CPT, ICD-10) from a physician's superbill or notes into the Allscripts billing module.",
+    "prospectingLocation": "AAPC (American Academy of Professional Coders) forums, job boards for 'Medical Biller' or 'Medical Coder'.",
+    "painPoint": "This is the critical step for revenue generation. It's highly repetitive and requires precision. Errors lead to claim denials, audits, and significant revenue loss. The cost is delayed payments and salaries for specialized coders.",
+    "searchQuery": "Upwork/Indeed: \"Allscripts charge entry\" OR \"medical billing specialist\""
+  },
+  {
+    "legacySoftware": "SAP GUI",
+    "industry": "Logistics / Manufacturing",
+    "task": "Creating sales orders (VA01 transaction) in SAP by manually keying in data from customer purchase order PDFs.",
+    "prospectingLocation": "LinkedIn job posts for 'Sales Order Processor', 'Customer Service Representative', or 'Logistics Coordinator'. SAP user group forums (ASUG).",
+    "painPoint": "A team of employees often does nothing but this all day. It's a major bottleneck that slows down the entire order-to-cash cycle. Errors in quantity, address, or pricing lead to costly shipping mistakes and customer disputes.",
+    "searchQuery": "LinkedIn: \"SAP sales order processing\" OR \"data entry SAP\""
+  },
+  {
+    "legacySoftware": "AS/400 Terminal (Green Screen)",
+    "industry": "Logistics / Trucking",
+    "task": "Entering Bill of Lading (BOL) and Proof of Delivery (POD) information from scanned documents into a legacy transportation management system (TMS).",
+    "prospectingLocation": "Logistics industry forums, job boards like 'Transport Topics', LinkedIn searches for 'Freight Operations' or 'Logistics Data Entry'.",
+    "painPoint": "Extremely outdated interface is slow and difficult to use. High volume of documents creates a backlog, delaying invoicing and carrier payments. High turnover for this type of tedious work.",
+    "searchQuery": "Indeed: \"AS400 data entry\" OR \"freight bill processing\" OR \"logistics clerk\""
+  },
+  {
+    "legacySoftware": "Custom Legacy Claims Processing System",
+    "industry": "Insurance",
+    "task": "First Notice of Loss (FNOL) intake: Entering data from ACORD forms (PDFs, faxes) into the claims system to initiate a new claim.",
+    "prospectingLocation": "Insurance-specific job boards, LinkedIn searches for 'Claims Assistant' or 'Claims Processor'.",
+    "painPoint": "Speed is critical in FNOL. Manual entry is a bottleneck that delays adjuster assignment and hurts customer satisfaction. Errors can cause significant issues down the line. Cost is competitive disadvantage and high operational overhead.",
+    "searchQuery": "LinkedIn/Indeed: \"claims processing data entry\" OR \"first notice of loss\" OR \"FNOL specialist\""
+  },
+  {
+    "legacySoftware": "State/Municipal Government Portal",
+    "industry": "Government",
+    "task": "Processing business license or permit applications that are submitted as PDFs and must be manually re-typed into a non-API, web-based backend system.",
+    "prospectingLocation": "Government procurement websites (GovWin, BidNet), LinkedIn searches for roles in municipal clerk's offices or state licensing boards.",
+    "painPoint": "Massive backlogs, especially during renewal periods. Slow processing frustrates citizens and businesses. High cost of temporary staff to handle peaks. Errors can lead to legal or compliance issues.",
+    "searchQuery": "LinkedIn: \"government data entry clerk\" OR \"license and permit specialist\""
+  },
+  {
+    "legacySoftware": "MLS (Multiple Listing Service) - e.g., Matrix, Paragon",
+    "industry": "Real Estate",
+    "task": "Entering new property listing details, photos, and descriptions into the MLS for real estate teams or brokerages.",
+    "prospectingLocation": "Real estate agent forums (e.g., BiggerPockets), LinkedIn groups for Real Estate Assistants, Upwork for 'Real Estate Virtual Assistant'.",
+    "painPoint
